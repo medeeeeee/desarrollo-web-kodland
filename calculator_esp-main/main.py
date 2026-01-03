@@ -60,5 +60,7 @@ def submit_form():
                            # Coloque aquí las variables
                            name=name, email=email, address=address, date=date
                            )
+    with open('form.txt', 'a',) as f:
+        f.write(name , email, adress, date)
 
 app.run(debug=True)
